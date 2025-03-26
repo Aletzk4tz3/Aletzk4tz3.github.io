@@ -1,7 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1>Hola, soy Brandon Alejando Hernández Srez.</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio" class="intro">
+        <h2>Bienvenido a mi Portafolio</h2>
+        <p>Desarrollador web en formación con experiencia en HTML, CSS, JavaScript y más.</p>
+    </section>
+
+    <section id="sobre-mi" class="about">
+        <h2>Sobre Mí</h2>
+        <div class="sobre-mi-content">
+            <div class="photo">
+                <img src="mi-foto.jpg" alt="Brandon Alejando Hernández Srez" class="foto-no-descargar">
+            </div>
+            <p>Soy un apasionado del desarrollo web, aprendiendo React, Vue y Angular.</p>
+        </div>
+    </section>
+    
+    <section id="proyectos" class="projects">
+        <h2>Proyectos</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="notemate.jpg" alt="NoteMate">
+                <div class="card-content">
+                    <h3>NoteMate</h3>
+                    <p>Aplicación de notas con PHP y MySQL. Organiza tus ideas de manera eficiente.</p>
+                    <a href="notemate-detalle.html">Ver más</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="portafolio.jpg" alt="Mi Portafolio">
+                <div class="card-content">
+                    <h3>Mi Portafolio</h3>
+                    <p>Sitio web personal con GitHub Pages. Muestra mi trabajo y proyectos.</p>
+                    <a href="portafolio-detalle.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript, PHP, MySQL</li>
+            <li>React, Vue, Angular</li>
+            <li>Git, VS Code</li>
+        </ul>
+        <h3>Habilidades en Desarrollo</h3>
+        <ul>
+            <li>Machine Learning</li>
+            <li>Ciberseguridad</li>
+        </ul>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>Email: brandonahdez20@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/Aletzk4tz3" target="_blank">Aletzk4tz3</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brandon Alejando Hernández Srez. Todos los derechos reservados.</p>
+    </footer>
+    <script src="efectos.js"></script>
 </body>
 </html>
