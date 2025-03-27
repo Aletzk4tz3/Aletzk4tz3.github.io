@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taquería Bistec y Costilla</title>
+    <link rel="stylesheet" href="taqueria-style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para iconos -->
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Bootstrap JS y dependencias (Popper.js y Bootstrap Bundle) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="typing-effect">¡Bienvenidos a nuestra Taquería!</h1>
+        <nav>
+            <ul>
+                <li><a href="#bistec">Bistec</a></li>
+                <li><a href="#costilla">Costilla</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bienvenidos">
+        <h2 class="typing-effect">¡Bienvenidos a nuestra Taquería!</h2>
+        <div id="carouselTaqueria" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="bistec.jpg" class="d-block w-100" alt="Bistec">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bistec Jugoso</h5>
+                        <p>Un delicioso taco de bistec a la parrilla.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="costilla.jpg" class="d-block w-100" alt="Costilla">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Costilla</h5>
+                        <p>La costilla más tierna, ¡te encantará!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="tacos.jpg" class="d-block w-100" alt="Tacos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tacos Exquisitos</h5>
+                        <p>Los mejores tacos de la ciudad, ¡pruébalos todos!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTaqueria" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTaqueria" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Taquería Bistec y Costilla - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="taqueria.js"></script>
+</body>
+</html>

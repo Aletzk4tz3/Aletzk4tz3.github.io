@@ -12,6 +12,19 @@ body {
     color: #333;
     transition: background-color 0.3s, color 0.3s;
     padding-top: 70px;
+    overflow-x: hidden;
+}
+
+/* Efecto de escritura */
+.typing-effect::after {
+    content: '|';
+    display: inline-block;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 /* Modo oscuro */
@@ -98,7 +111,7 @@ section {
     transform: translateY(0);
 }
 
-/* Partículas */
+/* Partículas (modo claro más visibles) */
 canvas {
     position: fixed;
     top: 0;
@@ -106,6 +119,14 @@ canvas {
     width: 100vw;
     height: 100vh;
     z-index: -1;
+    opacity: 1;
+}
+
+/* Efecto Parallax */
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Proyectos */
@@ -125,10 +146,11 @@ canvas {
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 5px;
+    perspective: 1000px;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: rotateY(10deg) scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -154,7 +176,7 @@ canvas {
 
 /* Foto no descargable */
 .foto-no-descargar {
-    width: 130px; /* Se redujo un poco el tamaño */
+    width: 130px;
     border-radius: 50%;
     pointer-events: none;
     margin-bottom: 15px;
@@ -167,6 +189,7 @@ canvas {
     justify-content: center;
     gap: 12px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .skills ul li {
@@ -175,6 +198,14 @@ canvas {
     padding: 6px 10px;
     border-radius: 5px;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skills ul li img {
+    width: 24px;
+    height: 24px;
 }
 
 .skills h3 {
@@ -209,7 +240,6 @@ footer {
     font-size: 22px;
 }
 
-/* Estilo al hacer hover */
 .mode-toggle-button:hover {
     background-color: #357abd;
 }
